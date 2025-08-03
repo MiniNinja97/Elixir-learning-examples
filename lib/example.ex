@@ -5,6 +5,7 @@ defmodule Example do
     Example.main()
     ExampleTwo.maintwo()
     ExampleNumbers.numbers()
+    MyDateTime.date_time_example()
     Supervisor.start_link([], strategy: :one_for_one)
   end
 
