@@ -8,6 +8,8 @@ defmodule ExampleNumbers do
 
     # IO.puts(a + b)
     IO.puts(a)
+    IO.puts(Float.ceil(0.5))
+    IO.puts(Integer.gcd(10, 25))
   end
 
 end
