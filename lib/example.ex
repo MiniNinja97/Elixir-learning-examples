@@ -10,10 +10,15 @@ defmodule Example do
   name = "Emma"
   status = Enum.random([:gold, :silver, :bronze])
 
-  if status === :gold do
-    IO.puts("Welcome to the fancy launch, #{name}")
-  else
-    IO.puts("Get lost")
+  # if status === :gold do
+  #   IO.puts("Welcome to the fancy launch, #{name}")
+  # else
+  #   IO.puts("Get lost")
+  # end
+  case status do
+    :gold -> IO.puts("Welcome to the fancy launch, #{name}")
+    :"not a member" -> IO.puts("Get subscribed")
+    _-> IO.puts("Get out")
   end
 end
 end
