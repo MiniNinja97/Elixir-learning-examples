@@ -8,5 +8,7 @@ defmodule MyDateTime do
 
      sweden_time = Timex.now("Europe/Stockholm")
     IO.inspect(sweden_time, label: "Lokal tid i Sverige")
+	sweden_date = sweden_time |> Timex.to_date()
+	IO.inspect(sweden_date, label: "Dagens datum i Sverige")
   end
 end
