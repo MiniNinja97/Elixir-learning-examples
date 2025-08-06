@@ -6,6 +6,7 @@ defmodule Example do
     ExampleTwo.maintwo()
     ExampleNumbers.numbers()
     MyDateTime.date_time_example()
+    MyTuples.myTuples()
     Supervisor.start_link([], strategy: :one_for_one)
   end
 
